@@ -1,22 +1,11 @@
-const a = Number(prompt('Введите первое число', ''));
-const b = Number(prompt('Введите второе число', ''));
+const ucFirst = (str) => str.charAt(0).toUpperCase() + str.slice(1);
 
-alert (a + b);
+const checkSpam = (str) => {
+  const strLowerCase = str.toLowerCase();
 
-const readNumber = () => {
-  number = prompt('Введите число', '');
-  
-  while (!isFinite(number)){
-    number = prompt('Введите число', '');
-  }
+  return strLowerCase.includes('viagra') || strLowerCase.includes('xxx');
+};
 
-  if(number === '' || !number){
-    return null;
-  } 
+const truncate = (str, maxLength) => str.slice(0, maxLength - 3) + '...';
 
-  return Number(number);
-}
-
-const getRand = (min, max) => Math.random() * (max - min) + min;
-
-const getRandInt = (min, max) => Math.floor( Math.random() * (max - min + 1) + min );
+const extractCurrencyValue = (str) => Number(str.slice(1)); 

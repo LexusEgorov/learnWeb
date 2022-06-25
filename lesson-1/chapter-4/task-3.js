@@ -1,10 +1,8 @@
-//1
 const a = {};
 
 function A() { return a }
 function B() { return a }
 
-//2
 function Calculator() {
   this.read = function(){
     this.a = Number(prompt('Введите А', 0));
@@ -20,7 +18,6 @@ function Calculator() {
   }
 }
 
-//3
 function Accumulator(startingValue) {
   this.value = startingValue;
   

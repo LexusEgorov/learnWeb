@@ -1,10 +1,20 @@
-const sumSalaries = (salariesObj) => {
-  let sum = 0;
-  for(const salary of Object.values(salariesObj)){
-    sum += salary;
-  }
-
-  return sum;
+let user = {
+  name: "John",
+  years: 30
 };
 
-const count = (obj) => Object.keys(obj).length;
+const {name, years: age, isAdmin = false} = user;
+
+const topSalary = (salaries) => {
+  let maxSalary = 0;
+  let maxName = null;
+
+  for(const [name, salary] of Object.entries(salaries)){
+    if(salary > maxSalary){
+      maxSalary = salary;
+      maxName = name;
+    }
+  }
+
+  return maxName;
+};

@@ -11,7 +11,6 @@ const isEmpty = (obj) => {
   return true;
 }; 
 
-//Можно, потому что мы меняем свойства объекта, а не сам объект
 
 const salaries = {
   John: 100,

@@ -1,31 +1,19 @@
-//4
-for(let i = 2; i <= 10; i+=2){
-  console.log(i);
-}
-
-//5
-let i = 0;
-while(i < 3){
-  alert( `number ${i}!` );
-  i++;
-}
-
-//7
-const isPrime = (number) => {
-  for (let i = 2; i < number; i++){
-    if(number % i === 0){
-      return false;
-    }
-  }
-  return true;
+const checkAge = {
+  OR: (age) => age > 18 || confirm('Родители разрешили?'),
+  TERNARY: (age) => age <= 18 ? confirm('Родители разрешили?') : true, 
 };
 
-const getPrimeNumbers = (n) =>{
-  for(let i = 2; i <= n; i++){
-    if(isPrime(i)){
-      console.log(i);
-    }
+const min = (a, b) => Math.min(a, b);
+
+const base = prompt('Введите число', '');
+const exponent = prompt('Введите степень', '');
+
+const pow = (x, n) => {
+  if(n <= 0 || Number.isInteger(n)){
+    alert('Число не является натуральным');
+    return;
   }
+  return Math.pow(x, n);
 }
 
-getPrimeNumbers(50);
+alert(pow(base, exponent));

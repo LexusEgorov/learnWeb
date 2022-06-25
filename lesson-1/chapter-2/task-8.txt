@@ -1,9 +1,0 @@
-1) 2
-2) 1, 2
-3) null
-4) 1, undefined
-5) 3
-6) task-8.js
-7) task-8.js
-8) 1 и 3
-9) task-8.js

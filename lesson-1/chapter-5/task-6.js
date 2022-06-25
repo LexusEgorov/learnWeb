@@ -1,13 +1,10 @@
-const unique = (arr) => {
-  const valuesSet = new Set(arr);
-  return [...valuesSet];
-};
-
-const aclean = (arr) => {
-  const mapByArr = new Map();
-  for(const element of arr){
-    mapByArr.set(element.toLowerCase().split('').sort().join(), element);
+const sumSalaries = (salariesObj) => {
+  let sum = 0;
+  for(const salary of Object.values(salariesObj)){
+    sum += salary;
   }
-  return [...mapByArr.values()];
+
+  return sum;
 };
 
+const count = (obj) => Object.keys(obj).length;
