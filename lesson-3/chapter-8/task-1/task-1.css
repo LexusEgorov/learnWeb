@@ -1,0 +1,56 @@
+ul{
+  list-style: none;
+}
+
+.text{
+  margin: 6px;
+  margin-left: 16px;
+}
+
+.icon{
+  width: 16px;
+  height: 16px;
+  float: left;
+  cursor: pointer;
+}
+
+.open .icon{
+  background: url('https://js.cx/sprite-tree/minus.gif');
+}
+
+.closed .icon{
+  background: url('https://js.cx/sprite-tree/plus.gif');
+}
+
+.leaf .icon{
+  cursor: text;
+  background: url('https://js.cx/sprite-tree/article.gif');
+}
+
+.nav{
+  margin: 0 auto;
+  width: 500px;
+  height: 50px;
+  text-align: center;
+}
+
+.pages{
+  margin: 0;
+  padding: 0;
+}
+
+.pages li{
+  display: inline;
+  margin-right: 5px;
+  line-height: 50px;
+}
+
+.left{
+  float: left;
+  cursor: pointer;
+}
+
+.right{
+  float: right;
+  cursor: pointer;
+}
